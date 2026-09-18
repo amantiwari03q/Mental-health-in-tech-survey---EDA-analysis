@@ -27,7 +27,7 @@ PALETTE = ["#3d5a80", "#e07a5f", "#81b29a", "#f2cc8f", "#98c1d9", "#ee6c4d"]
 # Data loading & cleaning (cached)
 # ----------------------------------------------------------------------------
 @st.cache_data
-def load_data(path: str = "data/survey.csv") -> pd.DataFrame:
+   def load_data(path: str = "survey.csv") -> pd.DataFrame:
     df = pd.read_csv(path)
 
     # Clean Age: clip implausible values to NaN
